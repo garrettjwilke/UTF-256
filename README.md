@@ -3,10 +3,6 @@
 
 *homeless.wtf*
 
-## Status of this Memo
-
-This document specifies an Internet standards track protocol for the Internet community and requests discussion and suggestions for improvements. Please refer to the current edition of the "Internet Official Protocol Standards" (STD 1) for the standardization state and status of this protocol. Distribution of this memo is unlimited.
-
 ## Abstract
 
 The development of character encodings has historically focused on efficiency and compactness. This memo introduces **UTF-256**, an intentionally inefficient and bloated transformation format of the Universal Character Set (UCS). Its sole purpose is to convert an efficient UTF-8 byte stream into a massive, resource-intensive data format. This standard is designed for environments with an excess of storage and processing power.
