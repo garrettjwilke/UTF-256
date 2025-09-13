@@ -1,3 +1,5 @@
 output/
 *target/
 *utf-256
+*utf-256.hi
+*utf-256.o
