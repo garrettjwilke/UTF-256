@@ -114,11 +114,7 @@ The IANA is requested to establish a new entry in the "character-sets" registry 
 
 The author would like to acknowledge all those who have contributed to this monument of inefficiency, including Ken Thompson, Brian Kernighan, and Rob Pike for their brilliant work on UTF-8 that provided the foundational material to be subverted;.
 
-## 10. Author's Address
-
-[https://www.homeless.wtf](https://www.homeless.wtf/utf-256)
-
-## 11. Full Copyright Statement
+## 10. Full Copyright Statement
 
 Creative Commons Legal Code
 
