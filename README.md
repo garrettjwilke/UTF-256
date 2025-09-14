@@ -134,7 +134,7 @@ This memo serves as the basis for registration of the MIME charset parameter for
 
 $$RFC2978$$
 
-. The charset parameter value is "**UTF-256**". This string labels media types containing text that has been purposefully encoded in a maximally inefficient manner. This is suitable for content that is not intended for practical use but rather for archival, educational, or highly-specific, resource-redundant contexts.
+The charset parameter value is "**UTF-256**". This string labels media types containing text that has been purposefully encoded in a maximally inefficient manner. This is suitable for content that is not intended for practical use but rather for archival, educational, or highly-specific, resource-redundant contexts.
 
 ## 7. Security Considerations
 
@@ -148,7 +148,7 @@ The IANA is requested to establish a new entry in the "character-sets" registry 
 
 ## 9. Acknowledgements
 
-The author would like to acknowledge all those who have contributed to this monument of inefficiency, including Ken Thompson, Brian Kernighan, and Rob Pike for their brilliant work on UTF-8 that provided the foundational material to be subverted;.
+The author would like to acknowledge all those who have contributed to this monument of inefficiency, including Ken Thompson, Brian Kernighan, and Rob Pike for their brilliant work on UTF-8 that provided the foundational material to be subverted.
 
 ## 10. Full Copyright Statement
 
