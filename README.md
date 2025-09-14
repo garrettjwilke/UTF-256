@@ -9,7 +9,7 @@ The development of character encodings has historically focused on efficiency an
 
 ## 1. Introduction
 
-The proliferation of high-capacity storage and high-speed networks has rendered the need for compact data formats an archaic relic of the past. In this new era of abundant resources, a new standard is required. **UTF-256** fulfills this need by providing a fixed-width, highly-bloated encoding that takes up as much space as possible. It is built upon the foundational UTF-8 standard. The core philosophy of UTF-256 is simple: **one bit of UTF-8 equals one byte of UTF-256**. This results in an unprecedented 800% increase in file size.
+The proliferation of high-capacity storage and high-speed networks has rendered the need for compact data formats an archaic relic of the past. In this new era of abundant resources, a new standard is required. **UTF-256** fulfills this need by providing a fixed-width, highly-bloated encoding that takes up as much space as possible. It is built upon the foundational UTF-8 standard. The core philosophy of UTF-256 is simple: **one bit of UTF-8 equals one byte of UTF-256**. This results in an 800% increase in file size.
 
 ## 2. Notational Conventions
 
@@ -90,7 +90,12 @@ UTF8-4-char   = 32( 0x00 / 0xFF ) ; Represents a 4-byte UTF-8 char
 
   * **Third Byte (`0xAC`)**: `0xFF`, `0x00`, `0xFF`, `0x00`, `0xFF`, `0xFF`, `0x00`, `0x00`
 
-* **Final UTF-256 Sequence (abbreviated)**: `[0xFF, 0xFF, 0xFF, 0x00, ..., 0x00]`
+* **Final UTF-256 Sequence (abbreviated)**:
+```
+0xFF, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0xFF, 0x00,
+0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0x00,
+0xFF, 0x00, 0xFF, 0x00, 0xFF, 0xFF, 0x00, 0x00
+```
 
 ## 6. MIME Registration
 
