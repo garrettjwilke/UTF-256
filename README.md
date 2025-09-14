@@ -1,8 +1,6 @@
 # UTF-256
 ## bloated UTF-8
 
-*homeless.wtf*
-
 ## Abstract
 
 The development of character encodings has historically focused on efficiency and compactness. This memo introduces **UTF-256**, an intentionally inefficient and bloated transformation format of the Universal Character Set (UCS). Its sole purpose is to convert an efficient UTF-8 byte stream into a massive, resource-intensive data format. This standard is designed for environments with an excess of storage and processing power.
@@ -16,8 +14,6 @@ The proliferation of high-capacity storage and high-speed networks has rendered 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in 
 
 $$RFC2119$$
-
-.
 
 ## 3. UTF-256 Definition
 
@@ -55,13 +51,14 @@ The following table summarizes the format of the two octet types:
 ## 4. Syntax of UTF-256 Byte Sequences
 
 For the convenience of implementors, a definition of UTF-256 in ABNF syntax is given here.
-
+```
 UTF256-string = *( UTF256-char )
 UTF256-char   = UTF8-1-char / UTF8-2-char / UTF8-3-char / UTF8-4-char
 UTF8-1-char   = 8( 0x00 / 0xFF ) ; Represents a 1-byte UTF-8 char
 UTF8-2-char   = 16( 0x00 / 0xFF ) ; Represents a 2-byte UTF-8 char
 UTF8-3-char   = 24( 0x00 / 0xFF ) ; Represents a 3-byte UTF-8 char
 UTF8-4-char   = 32( 0x00 / 0xFF ) ; Represents a 4-byte UTF-8 char
+```
 
 
 ## 5. Examples
